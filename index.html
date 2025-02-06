@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NutriPlan - AI Indian Meal Planner</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>NutriPlan</h1>
+    <p>Smart Indian Nutrition Planner with AI Suggestions</p>
+  </header>
+
+  <main>
+    <section id="meal-plan">
+      <h2>Your Personalized Plan</h2>
+      <div id="nutrition-summary"></div>
+      <div id="meal-list" class="meal-list"></div>
+      <div id="alternative-meals" class="alternative-meals"></div>
+    </section>
+
+    <section id="user-input">
+      <h2>Create Your Plan</h2>
+      <form id="meal-form">
+        <div class="form-group">
+          <label for="diet-type">Diet Type:</label>
+          <select id="diet-type" name="diet-type">
+            <option value="vegetarian">Vegetarian</option>
+            <option value="vegan">Vegan</option>
+            <option value="non-vegetarian">Non-Veg</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="calories">Target Calories:</label>
+          <input type="range" id="calories" min="1200" max="3000" value="2000" />
+          <span id="calorie-value">2000</span> kcal
+        </div>
+
+        <div id="calorie-suggestion">
+          <p>Suggested Range: <span id="suggested-calories">1800-2200 kcal</span></p>
+        </div>
+
+        <button type="submit">Generate Plan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 NutriPlan • Authentic Indian Nutrition Solutions <br>All right reserved By Abhishek</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
